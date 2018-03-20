@@ -1,0 +1,327 @@
+html{ -ms-overflow-x:hidden;
+}
+
+body{   
+	font-family:Source Sans Pro; 
+	overflow-x: hidden;
+}  
+
+/*navbar styles*/
+li a{
+	margin-left: 3px;
+	color: white;
+	background-color:rgb(232,114,18);
+	font-size: 15px;
+}
+
+.navbar-collapse { padding: 0; } 
+.navbar-nav > li:first-child > a, .navbar-nav > li:last-child > a { padding: 0px; }
+.navbar-nav { display: table; width: 100%; margin: 0; }
+.navbar-nav > li { display: table-cell; text-align: center; float: none; }
+.navbar-nav > li >a {padding:8px;}
+.prev-tab{margin-left: 0px;}
+.nav_icons{position: relative;top:5px;padding-top: 3px;padding-bottom: 13px;}
+li a:hover{background-color:rgb(232,114,18) !important;}
+/*navbar styles ends*/
+
+.clear_margin_bottom{
+	position: relative;
+	margin-bottom: 0px;
+}
+
+/* checkbox and radio buttons styles*/
+.checkbox_container, .radio_container {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    padding-right: 0px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hide the browser's default checkbox and radio button */
+.checkbox_container input, .radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio_container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* create custom checkbox*/
+.checkbox_container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_container:hover input ~ .checkmark, .radio_container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a light-gray background */
+.checkbox_container input:checked ~ .checkmark{
+    background-color: #66cc66;
+}
+
+/* When the radio button is selected, add a light-blue background */
+.radio_container input:checked ~ .checkmark {
+    background-color: #6666ff;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox_container input:checked ~ .checkmark:after , .radio_container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator for checkbox*/
+.checkbox_container .checkmark:after {
+    left: 9px;
+    top: 2px;
+    width: 5px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Style the indicator for radio button*/
+.radio_container .checkmark:after{
+  			border: solid white;
+  			   top: 5px;
+              left: 5px;
+  background-color: white;
+     border-radius: 50%;
+            height: 10px;
+             width: 10px;
+ -webkit-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);  
+}
+/* checkbox and radio buttons styles ends*/
+
+/* styles for logo here text*/
+.logohere{
+	  font-size: 30px;
+	margin-left: 20px;
+	      color: rgb(161,171,183);
+}
+
+/*styles for property details text*/
+.Propertydetails{
+	  font-size: 22px;
+	margin-left: 50px;
+	 margin-top: 23px;
+	      color: rgb(161,171,183);
+}
+
+/*styles for left and right arrows at the page end*/
+	.leftarrow{
+		  padding-top: 7px;
+		padding-right: 10px;
+	     	    width: 70px;
+		 padding-left: 10px;
+		       height: 45px;
+	   padding-bottom: 0px;
+	 background-color: rgb(116,133,151);
+	}
+
+	.rightarrow{
+		  padding-top: 7px;
+		padding-right: 10px;
+		        width: 70px;
+		 padding-left:15px;
+		       height: 45px;
+	 background-color: rgb(116,133,151);
+	}
+
+/* styles for the horizontal line*/
+	hr{
+		  margin-left: 50px;
+		 margin-right: 50px;
+	}
+
+/*styles for h3 elements*/
+	h3{
+	      font-weight: bold;
+		margin-bottom: 0px;
+		   margin-top: 10px;
+		    font-size: 18px;
+	}
+
+.input-group-unstyled .input-group-addon {
+	    border-radius: 0px;
+	           border: 0px;
+	 background-color: transparent;
+	            color:rgb(45,204,111);
+	    padding-right: 0px;
+    }
+
+/* styles for the + and - icons*/
+.minusicon_styles{
+		  cursor: pointer;
+		   color:rgb(45,204,111);
+	   font-size: 15px;
+      } 
+.plusorminusicon{
+		    color: rgb(45,204,111);
+		   cursor: pointer;	 
+		font-size: 15px;
+      }
+.codes_minusicon{	
+		    color: rgb(45,204,111);
+		font-size: 15px;
+      }
+.plusicon{	
+    	   color: rgb(232,114,18);
+			left: 2px;
+		  cursor: pointer;
+		 display: block;
+	   font-size: 13px;
+     }
+
+/*styles to place custom icon to select menu*/
+select {
+       -webkit-appearance:none;
+          -moz-appearance:none;
+          -ms-appearance:none;
+                   cursor:pointer;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+    }
+/* to hide defalult styling of select dropdown in IE */
+    select::-ms-expand {
+    display: none;
+}
+.label1 {position:relative;}
+.label1:after {
+        content:"\f078";   
+    font-family: "FontAwesome";
+      font-size: 15px;
+          color:#aaa;
+          right:25px;
+            top:22px;
+        padding:0 0 2px;
+       position:absolute;
+ pointer-events:none;
+   }
+.label1:before {
+    right:4px; 
+    top:0px;
+    width:23px; 
+    height:18px;
+    background:#fff;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+   }
+
+/*styles to show calender*/
+.calender{
+	background-color: white;
+	padding-left: 15px !important;
+	padding-right: 13px !important;
+    }
+.fa-calendar:before {
+    position: relative;
+    left: -8px;
+    top: 2px;
+
+   }
+
+/* other single line and multi-line styles*/
+.codeuserbox{margin-top: 15px;}
+.codeselect{margin-top: -15px;}
+.codeLocbox{margin-top:75px;}
+.textcolor{color: rgb(163,171,184);}
+h4{font-weight: bold;}
+.section-2{margin-top: 0px;	}
+.dropdown_margin{padding-left: 0px;}
+.emptyrow{margin-bottom:70px;}
+.input-group-addon {padding: 8px 10px;}
+.input-group{display: flex;}
+.margin_for_parking_restrictions{margin-left: 45px;}
+.status_bar {border-top: 3px solid rgb(51,194,78);}
+.bodysection{margin-top:70px;}
+select,.Loc{margin-top: 15px;}
+label, .margin_bottom{margin-bottom: 15px;}
+.step1{margin-left: 3px;}
+
+.glyphicon{
+	     font-size: 20px;
+	      position: relative;
+	           top:4px;
+   }
+
+.dolor{
+	background-color: white;
+	           width: 25px;
+    }
+.accessfee{
+		margin-top: 15px;
+		padding-left: 0px;
+	}
+
+
+/* styles to be applied for devices having width below 991px(tablets)*/
+@media screen and (max-width: 991px){
+.nav_icons{
+			position: relative;
+				 top:12px;
+		 padding-top: 3px;
+	  padding-bottom: 32px;
+	}
+
+.plusorminusicon{
+position: relative;
+	left: -2px;
+	 top: 0px;
+}
+
+.keytextboxes{margin-left: 15px;}
+.codeLocbox{margin-top: 35px;}
+.plusicon{left:0px;}
+.emptyrow{margin-bottom:50px;}
+.Loc{margin-top: 0px;}
+.label1 {position:relative; top:-15px;}
+.codeselect{margin-top: 0px;padding-left: 0px;}
+
+.clear_padding_right{
+	padding-right: 0px
+}
+
+.clear_padding_left{
+	padding-left: 0px;
+}
+
+.clear_padding{
+	padding-right: 0px;
+	padding-left: 0px;	
+}
+
+}
